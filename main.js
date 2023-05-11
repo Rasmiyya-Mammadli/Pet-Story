@@ -5,7 +5,7 @@ let navMenu = document.createElement('div');
 navMenu.innerHTML = `
   <div class="w-full h-[186px] bg-black absolute top-[34px] sm:h-[339px]"> 
     <ul class="text-white font-bold text-base mx-6 mt-6">
-      <li class="hover:bg-orange-500 h-[40px]"><a href="../main-page/main.html">About</a></li>
+      <li class="hover:bg-orange-500 h-[40px]"><a href="./main.html">About</a></li>
       <li class="hover:bg-orange-500 h-[40px]"><a href="../donate-page/donate.html">Donate</a></li>
       <li class="hover:bg-orange-500 h-[40px]"><a href="../contact-page/contact.html">Contact us</a></li> 
       <li class="hover:bg-orange-500 h-[40px]"><a href="https://rs.school/">Designed by@</a></li>

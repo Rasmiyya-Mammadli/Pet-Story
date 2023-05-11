@@ -107,12 +107,12 @@ function submitForm() {
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        // show the success message and hide the form
+   
         const confirmationMessage = document.getElementById('order-confirmation');
         form.style.display = 'none';
         confirmationMessage.style.display = 'block';
       } else {
-        // show the error message
+ 
         const errorMessage = document.getElementById('submit-error');
         errorMessage.textContent = 'There was an error submitting the form.';
       }
@@ -123,39 +123,3 @@ function submitForm() {
 
 
 
-
-        
-
-
-  // function validateForm() {
-  //   let name = document.getElementById("name").value.trim();
-  //   let lastname = document.getElementById("lastlname").value.trim();
-  //   let email = document.getElementById("email").value.trim();
-  //   let message = document.getElementById("message-text").value.trim();
-  //   let errorMessage = document.getElementById("error-message");
-  
-  //   // Check if name, email, and message fields are filled
-  //   if (name === "" || email === "" || message === "") {
-  //     errorMessage.innerText = "Please fill in all fields.";
-  //     errorMessage.classList.remove("hidden");
-  //     return false;
-  //   }
-  
-  //   // Check if email is valid
-  //   let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  //   if (!emailRegex.test(email)) {
-  //     errorMessage.innerText = "Please enter a valid email address.";
-  //     errorMessage.classList.remove("hidden");
-  //     return false;
-  //   }
-  
-  //   // If all fields are valid, send message and show confirmation message
-  //   showMessage();
-  //   return true;
-  // }
-  
-  // function showMessage() {
-  //   let messageDiv = document.getElementById("message");
-  //   messageDiv.classList.remove("hidden");
-  // }
-  
