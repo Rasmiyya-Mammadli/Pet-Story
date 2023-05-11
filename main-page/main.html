@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <head>
+        
+        <style>
+        body {
+            font-family: 'Roboto';
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        html{
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .fade {
+        animation-name: fade;
+     animation-duration: 1.5s;
+   
+       }
+ 
+       @keyframes fade {
+       from {opacity: .4}
+       to {opacity: 1}
+       }
+       
+        input[type="range"] {
+    appearance: none;
+    width: 600px;
+    height: 8px;
+   
+    background-color: #f1f3f2;
+    border-radius: 5px;
+    overflow-y: hidden; }
+     input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 115px;
+    height: 8px;
+    border-radius: 5px;
+    background: #f9804b;
+    cursor: pointer; }
+    @media (max-width: 1000px) {
+       input[type="range"]::-webkit-slider-thumb {
+        width: 75px; } }
+
+        .darkened-area1{
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+   background-color: rgba(25, 23, 23,0.6);
+}
+.darkened-area2{
+    top: 2530px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+   background-color: rgba(25, 23, 23,0.6);
+}
+.darkened-area3{
+    top: 2530px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+   background-color: rgba(25, 23, 23,0.6);
+}
+.dark{
+    display: none;
+}
+
+        </style>
+ 
+</head>
+<body>
+    <header class="bg-black">
+        <nav class="flex justify-between items-center h-9 md:h-20">
+            <div>
+                <h1 class="font-bold text-base text-white hover:text-orange-500 text-center ml-6"><a href="./main.html">PetStory<i class="fa-solid fa-cat text-white text-3xl"></i></a></h1>
+            </div>
+            <div class="w-9 md:hidden"></div>
+            <div class="md:hidden sm:ml-[300px] ml-[50px]"><i class="fa-solid fa-bars text-white justify-end hover:text-orange-500 active:text-green-500"></i></div>
+            <ul class="md:flex md:font-medium hidden md:block">
+                <li class="md:mr-6 text-orange-500"><a href="../main-page/main.html">About</a></li>
+                <li class="md:mr-6 hover:text-orange-500 text-white"><a href="../donate-page/donate.html">Donate</a></li>
+                <li class="hover:text-orange-500 text-white"><a href="../contact-page/contact.html">Contact us</a></li>
+            </ul>
+            <div><a href="https://rs.school/" class="md:block md:m-4 hover:text-orange-500 font-bold text-white hidden">Designed by@</a></div>
+        </nav>
+    </header>
+   
+        <section class="box-border w-full lg:h-[500px] h-[186px] bg-no-repeat bg-cover sm:h-[339px] xl:h-[700px]" style="background-image: url(./assets/GiantPanda.png)">
+            <div class="flex justify-between">
+                <div></div>
+                <div class="rounded-full bg-orange-500 w-[119px] h-[119px] m-5 sm:w-[238px] sm:h-[238px] lg:w-[367px] lg:h-[367px] lg:my-auto lg:mr-12 xl:w-[465px] xl:h-[465px] xl:mr-[300px] xl:mt-10">
+                    <p class="uppercase w-32 h-25 text-2xl leading-5 text-center font-bold text-white  pt-3 sm:w-[255px] sm:h-50 sm:text-5xl sm:p-5 sm:pr-[-30px] sm:leading-10 lg:w-100 lg:h-80 lg:text-[85px] lg:leading-[63px] lg:mt-3 lg:ml-3 xl:w-[500px] xl:h-[400px] xl:text-[106px] xl:leading-[80px] xl:ml-10" >Watch your <span class="text-[#FFEE2E] !important">favorite</span> animal online</p>   
+                </div>
+            </div>
+            <button class="xl:ml-[975px] lg:ml-[645px] lg:mt-5 bg-orange-500 rounded-3xl w-72 h-14 text-white mx-3 mt-9 font-medium text-base hover:bg-green-500 sm:my-auto ">WATCH ONLINE</button> 
+        </section>
+        <section class="mt-16 sm:m-auto lg:mt-10 lg:ml-7 lg:h-[427px]"> 
+            <div class="lg:flex lg:pt-10 lg:justify-evenly 2xl:pt-[100px]">
+               <div class="lg:bg-no-repeat lg:bg-cover lg:box-border lg:w-[455px] lg:h-[408px] xl:w-[600px]" style="background-image: url(./assets/bamboo-cap\ \(1\).png)"></div>
+
+                <div class="px-3 py-7 lg:py-0 lg:w-[455px] xl:w-[500px] 2xl:ml-[-100px]">
+                    <h2 class="text-2xl leading-7 font-normal lg:text-5xl lg:leading-14">The Backstage of the Wilderness World.</h2>
+                    <p class="text-base leading-5 font-normal mt-5 xl:mt-8">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+                    <h3 class="font-normal text-2xl leading-7 mt-7 xl:mt-14">How it works</h3>
+                    <p class="font-normal text-base leading-6 mt-3 xl:mt-6">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+                 </div>
+            </div>
+            <img src="./assets/flower_foto1 (3).png" alt="" class="hidden 2xl:block absolute top-[770px] right-0">
+        </section>
+        <section class="lg:mt-[142px] 2xl:mt-[242px]">
+            <div class="grid-cols-1 gap-3 grid sm:grid-cols-2 md:w-[610px] lg:w-[966px] mx-auto lg:grid-cols-3 xl:w-[1158px] 2xl:m-auto myAnimals">
+                <div class="rounded-md w-[285px] h-[322px] border border-[#FA6F32] m-auto lg:w-[294px] lg:h-[354px] xl:w-[366px] xl:h-[426px]">
+                    <img src="./assets/Rectangle 5 (6).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base uppercase">Giant Pandas</h4> 
+                    <p class="ml-4 text-xs">Native to Southwest China</p>
+                </div>
+                <div class="rounded-md w-[285px] h-[322px] border border-[#FA6F32] m-auto lg:w-[294px] lg:h-[354px] xl:w-[366px] xl:h-[426px]">
+                    <img src="./assets/Rectangle 5 (7).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">Eagles</h4>
+                    <p class="ml-4 text-xs">Native to South America</p>
+                </div>
+                <div class="rounded-md w-[285px] h-[322px] border border-[#FA6F32] m-auto sm:mt-[92px] lg:w-[294px] lg:h-[354px] xl:w-[366px] xl:h-[426px] lg:mt-0">
+                    <img src="./assets/Rectangle 5 (8).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">Gorillas</h4>
+                    <p class="ml-4 text-xs">Native to Congo</p>
+                </div>
+                <div class="sm:mt-[92px] rounded-md w-[285px] h-[322px] border border-[#FA6F32] m-auto  lg:w-[294px] lg:h-[354px]  xl:w-[366px] xl:h-[426px]">
+                    <img src="./assets/Rectangle 5 (9).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">Two-toed Sloth</h4>
+                    <p class="ml-4 text-xs">Mesoamerica, South America</p>
+                </div>
+                <div class="lg:mt-[92px] hidden rounded-md lg:w-[294px] lg:h-[354px] border border-[#FA6F32] lg:block  xl:w-[366px] xl:h-[426px]">
+                    <img src="./assets/Rectangle 5 (10).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">cheetahs</h4>
+                    <p class="ml-4">Native to Africa</p>
+                </div>
+                <div class="lg:mt-[92px] hidden rounded-md lg:w-[294px] lg:h-[354px] border border-[#FA6F32] lg:block  xl:w-[366px] xl:h-[426px]">
+                    <img src="./assets/Rectangle 5 (11).png" alt="">
+                    <h4 class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">Penguins</h4>
+                    <p class="ml-4">Native to Antarctica</p>
+                </div>
+            </div>
+            <div class="flex justify-center py-5"><button class="sm:mt-20 w-[288px] h-[54px] rounded-3xl bg-orange-500 text-white text-base leading-6 font-medium  hover:bg-green-500">CHOOSE YOUR FAVORITE</button></div>
+            <i class="hidden lg:top-[1557px] xl:top-[1827px] 2xl:top-[1927px] fa-solid fa-circle-arrow-left lg:block sm:text-orange-500 sm:text-7xl sm:top-[1023px] sm:left-[223px] 2xl:left-[140px] absolute"></i>
+            <i class="hidden lg:top-[1557px] xl:top-[1827px] 2xl:top-[1927px] fa-solid fa-circle-arrow-right lg:block sm:text-orange-500 sm:text-7xl sm:top-[1023px] sm:right-[223px] 2xl:right-[140px] absolute"></i>
+        
+        </section>
+        <section class="mt-[60px] bg-gradient-to-r from-[#FEBDAB] to-[#E0D8F0] mt-10 h-[1082px] sm:h-[781px] lg:h-[876px] 2xl:h-[1004px]">
+            <div class="mt-[20px] h-[1042px] w-[300px] m-auto box-border rounded-2xl bg-rose-100 sm:w-[640px] sm:h-[741px] lg:h-[796px] lg:w-[940px] 2xl:h-[835px]  2xl:w-[1160px]"> 
+                <div class="pt-7 lg:mt-10">
+                    <h2 class="text-2xl font-normal leading-7 text-[#FE9013] sm:text-4xl sm:leading-12  text-center lg:leading-14 lg:text-5xl">Pick and feed a friend</h2>
+                    <p class="text-lg font-normal leading-5 pt-3  text-center sm:text-justify sm:mx-5 lg:text-2xl lg:leading-7 lg:pt-7 2xl:mx-[100px]">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                    <p class="hidden sm:block leading-5 font-medium text-base pt-10 text-[#333B41] sm:mx-5 2xl:mx-[100px]">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+                    <p class="hidden sm:block leading-5 font-normal text-base pt-2 text-[#333B41] sm:mx-5 2xl:mx-[100px]">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our Emergency Support Fund . </p>
+         
+                </div>
+                <div class="mt-8 mx-12">
+                    <h2 class="text-2xl font-normal leading-7 text-center sm:text-4xl sm:leading-12 lg:leading-14 lg:text-5xl">How it works</h2>
+                    <div class="flex flex-col mt-10 sm:flex-row sm:justify-between  2xl:mx-[198px]">
+                        <div class="w-[168px] h-[244px] box-border">
+                            <div class="bg-white box-border w-[168px] h-[168px] border-2 border-[#F9804B] border-solid rounded-md">
+                                <img src="./assets/pay (1).png" alt="" class="m-7">
+                            </div>
+                            <p class="mt-4 font-normal text-base leading-5">Pay with card</p>
+                        </div>
+                        <div class="w-[168px] h-[244px] box-border ">
+                            <div class="bg-white box-border w-[168px] h-[168px] border-2 border-[#F9804B] border-solid rounded-md">
+                                <img src="./assets/zoo (1).png" alt="" class="m-6">
+                            </div>
+                            <p class="mt-4 font-normal text-base leading-5">Payment goes to the zoo</p>
+                        </div>
+                        <div class="w-[168px] h-[244px] box-border">
+                            <div class="bg-white box-border w-[168px] h-[168px] border-2 border-[#F9804B] border-solid rounded-md">
+                                <img src="./assets/monkey (1).png" alt="" class="m-6">
+                            </div>
+                            <p class="mt-4 font-normal text-base leading-5">Your favourite animal gets delicious dish</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button class="w-[288px] h-[54px] rounded-3xl bg-orange-500 sm:mt-7 text-base leading-6 font-medium text-white hover:bg-green-500">FEED A FRIEND NOW</button>
+                </div>
+            </div>
+        </section>
+        <section class="h-[650px] mt-14 overflow-hidden">
+            <div class="relative place-items-center">
+                <h2 class="text-center text-2xl font-normal mt-5 sm:text-4xl sm:leading-11">Testimonials</h2>
+                <div class=" place-items-center  gap-4 mt-10 grid lg:grid-flow-col lg:w-[910px]  lg:h-[391px]  2xl:w-[1120px] lg:mx-auto  lg:overflow-x-hidden">
+                    <div class="review__1 testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3"></i> Michael John </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Today</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6">The best online zoo I’ve met. My son delighted very much ljves to watch....</p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                    </div>
+                    <div class="review__2 testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-orange-500"></i> Oska Samborska </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6">The best online zoo I’ve met. Online zoo is one jf the ways to instill a love for </p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                    </div>
+                    <div class="review__3 testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-green-500"></i> Fredericka Michelin </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6"> Online zoo is one jf the ways to instill a love for animals.</p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3"> My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. 
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                             </p>
+                    </div>
+                    <div class="hidden 2xl:block testimonial__item  w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] mx-auto sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-blue-500"></i> Mila Riksha </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6"> Online zoo is one jf the ways to instill a love for animals.</p>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3"> My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. 
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                         </p>
+                    </div>
+                    <div class="hidden lg:block testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-orange-500"></i> Oska Samborska </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6">The best online zoo I’ve met. Online zoo is one jf the ways to instill a love for </p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-rose-500"></i> Atay Mammad</h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6">The best online zoo I’ve met. Online zoo is one jf the ways to instill a love for </p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block testimonial__item sm:w-[600px] w-[299px] h-[109px] rounded-3xl border-2 border-solid border-orange-300 bg-[#F5F7F6] sm:mx-auto lg:w-[293px] lg:h-[391px] 2xl:w-[266px]">
+                        <h3 class="font-normal text-base leading-5 text-black mt-[-20px]"><i class="fa-regular fa-circle-user text-4xl pt-6 px-3 text-red-500"></i> Gigi Santos </h3>
+                        <h4 class="font-light text-sm leading-4 text-[#BDBDBD] mx-10">Local Austria  <i class="fa-solid fa-circle ml-3 text-gray-400"></i>Yesterday</h4>
+                        <p class="font-light text-sm leading-4 text-[#4F4F4F] mx-3 lg:mt-6">The best online zoo I’ve met. Online zoo is one jf the ways to instill a love for </p>
+                        <p class="hidden lg:block font-light text-sm leading-4 text-[#4F4F4F] mx-3">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                    </div>
+                   
+                    
+                </div>
+                <input type="range" min="1" max="5" step="1" value="1" aria-label="progress bar" class="hidden lg:block mt-[30px] mx-auto">
+                <div class="flex justify-center py-[50px]"><button class="w-[288px] h-[54px] rounded bg-orange-500 text-white uppercase text-base leading-5 hover:bg-green-500">leave a feedback</button>
+                </div>
+            </div>
+        </section>
+        <footer class="h-[334px] bg-black lg:h-[443px]">
+            <div class="lg:p-5 lg:flex lg:justify-between"><h1 class="lg:text-2xl lg:leading-6 font-bold text-base text-white hover:text-orange-500 text-center sm:text-start sm:ml-3 sm:pt-5"><a href="#">PetStory<i class="fa-solid fa-cat text-white text-3xl"></i></a></h1>
+                <form action="actual-path-to-subscribe-handler" class="hidden lg:block">
+                    <label for="email" class="text-white">Subscribe to our news</label>
+                    <br>
+                    <label class="sr-only" for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="text-gray-100 border-solid border-2 border-red-400 bg-black rounded w-[228px] h-[42px]">
+                    <button type="button" class="bg-white text-green-500 w-[129px] h-[42px] border-2 border-solid border-green-400 rounded ml-1">Submit</button>
+                </form>
+            </div>
+
+            <div class="text-center mt-6 sm:text-end sm:flex sm:flex-col sm:mt-0 lg:hidden">
+                <span><i class="fa-brands fa-facebook text-gray-400 pr-6 hover:text-green-500"></i></span>
+                <span><i class="fa-brands fa-twitter text-gray-400 pr-6 hover:text-green-500 sm:pt-4"></i></span>
+                <span><i class="fa-brands fa-instagram text-gray-400 pr-6 hover:text-green-500 sm:pt-4"></i></span>
+                <span><i class="fa-brands fa-youtube text-gray-400 hover:text-green-500 sm:pr-6 sm:pt-4"></i></span>
+            </div>
+            <button class="lg:ml-5 lg:mt-[81px] sm:mt-[-60px] mt-6 ml-3 w-[298px] h-[54px] rounded bg-orange-500 text-white uppercase text-base leading-5 hover:bg-green-500">donate for volunteers</button>
+            <div class="mt-[44px] gap-3 hidden lg:block ml-5">
+                <div class="mb-2"><a href="" class="text-white hover:text-green-500"><i class="fa-brands fa-facebook text-gray-400 pr-3 hover:text-green-500"></i>Facebook</a></div>
+                <div class="mb-2"><a href="" class="text-white hover:text-green-500"><i class="fa-brands fa-twitter text-gray-400 pr-3 hover:text-green-500"></i>Twitter</a></div>
+                <div class="mb-2"><a href="" class="text-white hover:text-green-500"><i class="fa-brands fa-instagram text-gray-400 pr-3 hover:text-green-500"></i>Instagram</a></div>
+                <div class=""><a href="" class="text-white hover:text-green-500"><i class="fa-brands fa-youtube text-gray-400 pr-3 hover:text-green-500"></i>YouTube</a></div>
+            </div>
+            <div class="text-white font-thin text-base leading-4 text-right mt-8 mr-3 lg:mt-[-10px]">
+                <h2>Designed by Alisa Samborskaya</h2>
+                <h2 class="mt-2">©RSSchool & ©Yem Digital 2021</h2>
+            </div>
+            <div class="sm:w-[300px] lg:mt-[-50px] lg:w-[700px] 2xl:w-[1600px]">
+                <ul class="flex justify-between text-white mx-3 mt-9  sm:mt-auto lg:justify-center lg:text-base lg:font-normal lg:leading-6">
+                    <li class="text-orange-400 !important"><a href="./main.html">About</a></li>
+                    <li class="hover:text-orange-400 lg:ml-10"><a href="../donate-page/donate.html">Donate</a></li>
+                    <li class="hover:text-orange-400 lg:ml-10"><a href="../contact-page/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+
+        </footer>
+     <script src="./main.js"></script>
+</body>
+</html>
